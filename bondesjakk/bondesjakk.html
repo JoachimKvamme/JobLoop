@@ -13,7 +13,19 @@
       </h1>
     </header>
     <main class="main">
-      <p>Her skal det komme bondesjakk</p>
+      <div class="ui">
+        <input type="text" id="b1" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b2" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b3" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b4" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b5" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b6" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b7" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b8" onclick="makeMove(this.id)" readonly />
+        <input type="text" id="b9" onclick="makeMove(this.id)" readonly />
+      </div>
+      <p id="score"></p>
+      <button onclick="reset()">Omstart</button>
     </main>
     <footer class="footer">
       <p>Copyright og den slags</p>
@@ -30,5 +42,6 @@
         </ul>
       </nav>
     </aside>
+    <script src="script.js"></script>
   </body>
 </html>
