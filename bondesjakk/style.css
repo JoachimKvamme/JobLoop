@@ -1,0 +1,42 @@
+* {
+  padding: 16px;
+  border-width: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "sidebar main main"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+  grid-area: header;
+  border-bottom-style: solid;
+}
+
+.main {
+  grid-area: main;
+  border-left-style: solid;
+}
+
+.sidebar {
+  padding: none;
+  display: flex;
+  grid-area: sidebar;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.footer {
+  grid-area: footer;
+  border-top-style: solid;
+}
+
+.nav-links {
+  list-style: none;
+}
