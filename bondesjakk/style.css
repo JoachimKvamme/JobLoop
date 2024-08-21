@@ -1,5 +1,4 @@
 * {
-  padding: 16px;
   border-width: 2px;
 }
 
@@ -11,32 +10,51 @@
     "sidebar main main"
     "footer footer footer";
   grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  padding: 16px;
 }
 
 .header {
   grid-area: header;
   border-bottom-style: solid;
+  border-left-style: solid;
+  padding: 16px;
 }
 
 .main {
   grid-area: main;
   border-left-style: solid;
+  padding: 16px;
 }
 
 .sidebar {
   padding: none;
-  display: flex;
   grid-area: sidebar;
   flex-direction: column;
-  justify-content: left;
+  justify-content: space-between;
+  display: flex;
 }
 
 .footer {
   grid-area: footer;
   border-top-style: solid;
+  border-right-style: solid;
 }
 
 .nav-links {
   list-style: none;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+a:hover {
+  background-color: grey;
 }
