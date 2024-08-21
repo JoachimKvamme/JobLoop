@@ -2,6 +2,10 @@
   border-width: 2px;
 }
 
+body {
+  background-color: #faf9f6;
+}
+
 .container {
   display: grid;
   grid-template-areas:
@@ -55,6 +59,35 @@ a {
   width: 100%;
 }
 
-a:hover {
-  background-color: grey;
+/* a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+} */
+
+#link_1:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(255, 73, 73);
+}
+
+#link_2:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(229, 255, 0);
+}
+
+#link_3:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(28, 255, 7);
+}
+
+#link_4:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(0, 255, 213);
+}
+
+li {
+  padding: 4px;
 }
