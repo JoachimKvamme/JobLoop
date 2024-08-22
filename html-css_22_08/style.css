@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(14, 149, 70, 0.541);
+  width: 400px;
+  height: 230px;
+  border: 2px solid black;
+}
+
+.inlineText {
+  display: flex;
+  flex-direction: column;
+}
+
+#bilde {
+  margin-top: 16px;
+}
